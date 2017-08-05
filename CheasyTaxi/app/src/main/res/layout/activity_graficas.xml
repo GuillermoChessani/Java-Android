@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/road2"
+    tools:context="com.example.usuario.cheasytaxi.Graficas">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gráfica Sensor"
+        android:id="@+id/btnSensorChart"
+        android:drawableLeft="@drawable/chart1"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:textAlignment="viewStart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnDynamicChart" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Gráfica Dinámica"
+        android:drawableLeft="@drawable/chart2"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:textAlignment="viewStart"
+        android:id="@+id/btnDynamicChart"
+        android:layout_below="@+id/btnSensorChart"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gráfica Pastel"
+        android:drawableLeft="@drawable/chart3"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:textAlignment="viewStart"
+        android:id="@+id/btnPieChart"
+        android:layout_below="@+id/btnDynamicChart"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnDynamicChart" />
+</RelativeLayout>

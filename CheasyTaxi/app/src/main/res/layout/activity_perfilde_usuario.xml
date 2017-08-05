@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@android:color/black"
+    tools:context="com.example.usuario.cheasytaxi.PerfildeUsuario">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dip"
+        android:orientation="vertical"
+        android:background="@drawable/road2"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Nombre:"
+
+            android:drawableLeft="@drawable/nombre"
+            android:drawablePadding="5dp"
+            android:id="@+id/textView" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editNombre"
+            android:hint="Nombre" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Usuario:"
+            android:drawableLeft="@drawable/usuario"
+            android:drawablePadding="5dp"
+            android:id="@+id/textView2"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editUsuario"
+            android:hint="Usuario" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="E-Mail:"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="5dp"
+            android:id="@+id/textView3" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editEmail"
+            android:hint="E-Mail"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Telefono"
+            android:drawableLeft="@drawable/telefono"
+            android:drawablePadding="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Teléfono:"
+            android:id="@+id/textView4" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+
+            android:hint="Teléfono"
+            android:id="@+id/editTelefono" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultar"
+            android:onClick="onClick"
+            android:drawableLeft="@drawable/check"
+            android:drawablePadding="5dp"
+            android:id="@+id/btnConsulta" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:hint="Inserte ID"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EDITAR"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/editar"
+                android:drawablePadding="15dp"
+                android:id="@+id/btnEditar" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/guardar"
+                android:drawablePadding="15dp"
+                android:id="@+id/btnGuardar"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pedir un Taxi"
+            android:drawableLeft="@drawable/icon4"
+            android:drawablePadding="15dp"
+            android:id="@+id/btnMapa"
+            android:layout_gravity="center_horizontal" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

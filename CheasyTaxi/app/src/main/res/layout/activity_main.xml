@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/uber"
+    tools:context=".MainActivity"
+    android:id="@+id/Linear">
+
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/button_padding"
+        android:paddingTop="@dimen/button_padding"
+        android:text="@string/registro"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/icon2"
+        android:drawablePadding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="52dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C8C9CB"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/txtNombre"/>
+
+
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="@string/contrasena_input"
+        android:inputType="textPassword"
+        android:padding="@dimen/edit_text_padding"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btnRegistro"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="@string/nombre_input"
+        android:inputType="textPersonName"
+        android:padding="@dimen/edit_text_padding"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/txtPassword"
+        android:layout_alignParentLeft="true" />
+
+
+    <Button
+        android:id="@+id/btnSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/button_padding"
+        android:paddingTop="@dimen/button_padding"
+        android:drawableLeft="@drawable/icon3"
+        android:drawablePadding="5dp"
+        android:text="@string/sesion"
+        android:textColor="@android:color/black"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/divider"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+        android:text="@string/acerca"
+        android:id="@+id/btnAcerca"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/btnRegistro" />
+
+
+</RelativeLayout>

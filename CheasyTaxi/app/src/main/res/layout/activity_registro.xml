@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dip"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="20dip"
+            android:orientation="vertical"
+            android:background="@drawable/road2">
+
+            <EditText android:id="@+id/txtNombre"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:hint="Nombre"
+                android:inputType="text"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                />
+
+            <EditText android:id="@+id/txtUsuario"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:hint="Usuario"
+                android:inputType="text"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"/>
+
+            <EditText android:id="@+id/txtPass1"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                />
+
+            <EditText android:id="@+id/txtPass2"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:hint="Confirmar Contraseña"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ciudad:"
+                android:id="@+id/textViewCiudad" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ocupación:"
+                android:id="@+id/textViewOcupación" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estudiante"
+                android:id="@+id/checkBox1"
+                />
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trabajador"
+                android:id="@+id/checkBox2"
+                android:layout_marginBottom="10dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexo:"
+                android:id="@+id/textView" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:id="@+id/radioButton1"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino"
+                    android:id="@+id/radioButton2"
+                    />
+
+            </RadioGroup>
+
+
+
+            <EditText android:id="@+id/txtEmail"
+
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="Teléfono"
+                android:ems="10"
+                android:id="@+id/txtTelefono"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Registrar"
+                android:id="@+id/BtnRegistro"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
